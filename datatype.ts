@@ -24,3 +24,18 @@ console.log(ans); //[90, 7, 4]
 
 let sum = numList.reduce((acc, num)=>acc+num) //reduce the arr to its sum 102
 console.log(sum)
+
+const enum color{ // const is magic it keeps index value and trim down all other info
+    red,
+    green,
+    blue
+}
+let C:color= color.green; //on compiling it dont give type 
+
+//tuples
+let swp: [number, number];
+function swap(num1:number,num2:number) : [number, number]{
+    return [num2, num1];
+}
+swp =  swap(10, 20);
+console.log(swp[1]);
