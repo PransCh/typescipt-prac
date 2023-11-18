@@ -1,6 +1,5 @@
 "use strict";
-let lname;
-lname = "prans";
+let lname = "prans";
 let newname = lname.toUpperCase();
 console.log(newname);
 let age;
@@ -21,3 +20,26 @@ function swap(num1, num2) {
 }
 swp = swap(10, 20);
 console.log(swp[1]);
+let dept;
+var zoo = [10, "lion", "cat"];
+console.log(zoo[1]);
+function print(id) {
+    console.log("Id " + id);
+}
+print(24);
+function print2(id) {
+    if (typeof id == "string")
+        console.log("Id (string)" + id);
+    if (Array.isArray(id))
+        console.log("Hello, " + id.join(" and "));
+    else
+        console.log("Id (int)" + id);
+}
+print2("Hello");
+var arr = [10, "Demo", "check"];
+print2(arr);
+function print3(id) {
+    let temp = `x ${id.x},y ${id.b}`;
+    return temp;
+}
+console.log(print3({ x: 200, b: 500 }));
